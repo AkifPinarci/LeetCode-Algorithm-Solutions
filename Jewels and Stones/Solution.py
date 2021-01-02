@@ -6,3 +6,10 @@ class Solution:
         for i in J:
             s += S.count(i)
         return s
+
+    def alternativeNumJewelsInStones(self, J: str, S: str) -> int:
+        numJewels=0
+        for s in S:
+            if s in J:
+                numJewels+=1
+        return numJewels
