@@ -1,18 +1,23 @@
 def solution(nums):
     if len(set(nums)) < 3:
         return max(nums)
+    track = [-1, -1, -1]
     for i in range(len(nums)):
-        track = [-1] * 3
+        
         if nums[i] > track[0] and nums[i] > track[1] and nums[i] > track[2] and nums[i] not in track:
             track[0] = track[1]
             track[1] = track[2]
             track[2] = nums[i]
-        if nums[i] > track[0] and nums[i] > track[1]and nums[i] < track[2] and nums[i] not in track:
+            print("Check 1")
+        elif nums[i] > track[0] and nums[i] > track[1]and nums[i] < track[2] and nums[i] not in track:
             track[0] = track[1]
             track[1] = nums[i]
-        if nums[i] > track[0] and nums[i] not in track:
+            print("Check 2")
+        elif nums[i] > track[0] and nums[i] not in track:
             track[0] = nums[i]
-
+            print("Check 3")
+        else:
+            pass
         print(track)
     if track[0] == -1 or track[1] == -1:
         return track[2]
