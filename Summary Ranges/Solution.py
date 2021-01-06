@@ -21,5 +21,10 @@ class Solution:
                 sp = nums[i+1]
                             
         return arr
-            
-                
+
+
+        #Mathematical Solution
+        # m = int(math.sqrt(2*n))
+        # if m*(m+1) / 2 <= n:
+        # return m
+        # return m-1       
