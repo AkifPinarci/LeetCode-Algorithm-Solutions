@@ -39,5 +39,3 @@ def solution(nums):
     # else:
     #     return min(track)
 
-nums = [1, 2, 3, 4, 5, 6, 7,45, 456, 234,12, 8, 9, 10]
-print(solution(nums))
