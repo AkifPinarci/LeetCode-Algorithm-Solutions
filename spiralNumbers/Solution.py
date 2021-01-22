@@ -1,3 +1,4 @@
+# Code Signal
 def spiralNumbers(n):
     rows, cols = (n,n) 
     result = [[0 for i in range(cols)] for j in range(rows)] 
