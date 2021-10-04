@@ -21,21 +21,21 @@ input1 = ""
 input2 = ""
 input3 = ""
 
-for i in crypt[0]:
-    if h_list[crypt[0][0]] == '0':
-        return False
-    input1 += h_list[i]
+# for i in crypt[0]:
+#     if h_list[crypt[0][0]] == '0':
+#         return False
+#     input1 += h_list[i]
     
-for i in crypt[1]:
-    if h_list[crypt[0][0]] == '0':
-        return False
-    input2 += h_list[i]
+# for i in crypt[1]:
+#     if h_list[crypt[0][0]] == '0':
+#         return False
+#     input2 += h_list[i]
         
-for i in crypt[2]:
-    if h_list[crypt[0][0]] == '0':
-        return False
-    input3 += h_list[i]
-    print(input3)
+# for i in crypt[2]:
+#     if h_list[crypt[0][0]] == '0':
+#         return False
+#     input3 += h_list[i]
+#     print(input3)
 
 # print(input3)    
 # print(input1, input2, input3)
